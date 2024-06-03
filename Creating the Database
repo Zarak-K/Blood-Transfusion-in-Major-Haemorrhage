@@ -1,0 +1,9 @@
+CREATE TABLE Patient_Info(
+Number VARCHAR(10) NOT NULL,
+[Date] DATE NOT NULL,
+Age INT NOT NULL,
+Gender VARCHAR(2) NOT NULL,
+[Reason for Activation] VARCHAR(30) NOT NULL,
+[Time of Activation] VARCHAR(10) NOT NULL,
+[Year] INT NOT NULL,
+[30 Day Survival] INT NOT NULL)
