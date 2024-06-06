@@ -1,4 +1,4 @@
 # Major Haemorrhage Protocol
 
 
-![MTP Overview](MTP%20Overview.png)
+![MTP Overview](Images/MTP%20Overview.png)
