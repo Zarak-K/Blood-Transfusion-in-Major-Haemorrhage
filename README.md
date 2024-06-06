@@ -1,1 +1,1 @@
-![Dashboard Screenshot](MTP Overview.png)
+![MTP Overview](MTP Overview.png)
