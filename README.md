@@ -1,1 +1,1 @@
-![Dashboard Screenshot](images/MTP Overview.png)
+![Dashboard Screenshot]("C:\Users\VicariousL\Pictures\MTP Overview.png")
