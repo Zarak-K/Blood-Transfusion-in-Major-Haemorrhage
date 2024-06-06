@@ -1,1 +1,1 @@
-![MTP Overview](MTP Overview.png)
+![MTP Overview](MTP%20Overview.png)
