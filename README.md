@@ -12,3 +12,7 @@ Data has been collected for major haemorrhage cases from 2017 - present. This da
 Data for the individual cases were entered into an excel spreadsheet and transfusion ratios for each case were calculated. Average ratios for each year were calculated along with 30 Day Survival rates for each year. Total units ordered, transfused, wasted and the percentage waste for each year was also calculated. This information was then moved to a database (template shown in Images - Database Template.png). The following dashboard displays this information, created in powerBI.
 
 ![MTP Overview](Images/MTP%20Overview.png)
+
+Individual reports for each year were also created, with an example shown below
+
+![MTP Overview](Images/MTP%202022%20Report.png)
