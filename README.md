@@ -15,6 +15,8 @@ Data for the individual cases were entered into an excel spreadsheet and transfu
 
 ![MTP Overview](Images/Database%20Template.png)
 
+Overview Dashboard
+
 ![MTP Overview](Images/MTP%20Overview.png)
 
 Individual reports for each year were also created, with an example shown below.
@@ -36,9 +38,9 @@ To assess the improvement in transfusion ratios that can be seen from the Overvi
 | 2022     | 8.3                   | 84.0                      |
 | 2023     | 16.7                  | 69.2                      |
 
-From this table it can be seen that transfusion ratios improve significantly from 2019 onwards. This was to be expected following an update to the transfusion protocol in 2019 which aimed specifically to improve the ratio. Overall, the ratio disparity has decreased by 23.6% from 2017.
+From this table it can be seen that transfusion ratios improve significantly from 2019 onwards. This was to be expected following an update to the transfusion protocol in 2019 which aimed specifically to improve the ratio. Overall, the ratio disparity has decreased by 23.6% from 2017 in absolute terms, with a relative reduction of 41.4%.
 
-##Objective 4
+## Objective 4
 Given that there is substantial clinical evidence to support the use of a 1:1:1 transfusion ratio, the research hypothesis is that increased disparity between administered and optimal ratios will be negatively correlated with 30 day survival rates. To assess this, linear regression analysis was performed
 
 ```python
@@ -79,7 +81,23 @@ axs[1].set_ylabel('Residuals')
 
 ![MTP Overview](Images/Regression%20Analysis.png)
 
-The r value was calculated to be -0.703 (p value = 0.039) indicating a moderate to strong negative linear correlation between ratio disparity and survival rate. This relationship is statistically significant assuming an alpha value of 0.05, providing some evidence in support of the research hypothesis. The obtained result is also in agreement with the clinical literature, further supporting the idea that major haemorrhage protocols should aim for a 1:1:1 ratio of RBC:FFP:Platelets.
+The r value was calculated to be -0.703 (p value = 0.039) indicating a moderate to strong negative linear correlation between ratio disparity and survival rate. This relationship is statistically significant assuming an alpha value of 0.05, providing some evidence in support of the research hypothesis. The obtained result is also in agreement with the clinical literature, further supporting the idea that major haemorrhage protocols should aim for a 1:1:1 ratio of RBC:FFP:Platelets to maximize survival outcomes.
+
+The R^2 value is 0.494, indicating the ratio disparity accounts for roughly 50% of the variance in survival rate. An R^2 value on the lower side would be expected given the abundance of other factors which impact survival, hence this linear model would not be sufficient for predicting survival rates. To provide stronger predictive power, a multifactorial model would need to be used accounting for Age, Gender, Injury severity and mechanism, time to first transfusion etc. in addition to the transfusion ratio, although this was beyond the scope of this project.
+
+## Objective 5
+Percentage waste for each blood component are shown below.
+
+| Year     | RBC Waste (%)   | FFP Waste (%)  | Platelet Waste (%) |
+| ---------| ----------------| ---------------|--------------------|
+| 2017     | 8.5             | 39.4           | 21.4               |
+| 2018     | 0.9             | 32.9           | 21.4               |
+| 2019     | 16.8            | 39.5           | 10.5               |
+| 2020     | 7.2             | 36.7           | 0                  |
+| 2021     | 11.9            | 27.8           | 6.25               |
+| 2022     | 10.2            | 26.1           | 5.1                |
+| 2023     | 7.9             | 25.6           | 11.1               |
+
 
 
 
