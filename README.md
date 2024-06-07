@@ -55,7 +55,7 @@ df = data.sort_values(by='Ratio Disparity')
 x = df['Ratio Disparity']
 y = df['Survival Rate']
 
-slope, intercept, r_value, p_value, std_err = linregress(x,y)
+slope, intercept, r_value, p_value = linregress(x,y)
 linear_fit = slope*x + intercept
 
 resid = y - linear_fit
