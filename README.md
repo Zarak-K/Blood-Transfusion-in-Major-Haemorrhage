@@ -17,6 +17,19 @@ Individual reports for each year were also created, with an example shown below.
 
 ![MTP Overview](Images/MTP%202022%20Report.png)
 
+## Objective 1
+Looking at the overview dashboard, the transfusion ratios appear to be closer to the ideal ratio, with a significant improvement from 2019 onwards. This was to be expected following an update to the transfusion protocol in 2019 which had the specific aim of improving the ratio. Average percentage disparities were calculated for each year an used to provide a quantitative assessment of the improvement.
+
+| Year     | Ratio Disparity (%)   | 30 Day Survival Rate (%)  |
+| ---------| --------------------- | --------------------------|
+| 2017     | 40.3                  | 42.9                      |
+| 2018     | 24.0                  | 46.7                      |
+| 2019     | 9.7                   | 56.3                      |
+| 2020     | 14.0                  | 66.7                      |
+| 2021     | 13.3                  | 91.7                      |
+| 2022     | 8.3                   | 84.0                      |
+| 2023     | 16.7                  | 69.2                      |
+
 Given that there is substantial evidence to support the use of a 1:1:1 ratio, the research hypothesis is that increased disparity between administered and optimal ratios will be negatively correlated with 30 day survival rates. The percentage disparity from optimal ratio was calculated for each year and linear regression analysis was performed.
 
 ```python
@@ -25,6 +38,7 @@ import matplotlib.pyplot as plt
 from scipy.stats import linregress
 
 data = pd.read_csv(file_path)
+
 df = data.sort_values(by='Ratio Disparity')
 
 x = df['Ratio Disparity']
@@ -35,21 +49,23 @@ linear_fit = slope*x + intercept
 
 resid = y - linear_fit
 
-plt.figure()
-plt.scatter(x, y, s=20)
-plt.plot(x, linear_fit, color='r', linewidth=1)
-plt.title('Ratio Disparity vs Survival Rate')
-plt.ylim(bottom=0)
-plt.ylim(top=100)
-plt.xlabel('Ratio Disparity (%)')
-plt.ylabel('Survival Rate (%)')
+fig, axs = plt.subplots(1, 2, figsize=(16, 8))
 
-plt.figure()
-plt.scatter(x, resid, s=20)
-plt.axhline(0, color='black', linestyle='--', linewidth=1)
-plt.title('Ratio Disparity vs Residuals')
-plt.xlabel('Ratio Disparity (%)')
-plt.ylabel('Residuals')
+axs[0].scatter(x, y, s=20)
+axs[0].plot(x, linear_fit, color='r', linewidth=1)
+axs[0].set_title('Ratio Disparity vs Survival Rate')
+axs[0].set_ylim(bottom=0)
+axs[0].set_ylim(top=100)
+axs[0].set_xlabel('Ratio Disparity (%)')
+axs[0].set_ylabel('Survival Rate (%)')
+
+
+axs[1].scatter(x, resid, s=20)
+axs[1].axhline(0, color='black', linestyle='--', linewidth=1)
+axs[1].set_title('Residuals')
+axs[1].set_xlabel('Ratio Disparity (%)')
+axs[1].set_ylabel('Residuals')
+
 ```
 
 ![MTP Overview](Images/Regression%20Analysis.png)
