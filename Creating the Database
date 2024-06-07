@@ -1,3 +1,7 @@
+<pre>
+<code>
+```sql
+
 CREATE TABLE Patient_Info(
 Number VARCHAR(10) NOT NULL,
 [Date] DATE NOT NULL,
@@ -99,7 +103,9 @@ ADD CONSTRAINT PK_Ratios_Year PRIMARY KEY ([Year])
 ALTER TABLE Patient_Info
 ADD CONSTRAINT FK_Patient_Info_Ratios FOREIGN KEY ([Year]) REFERENCES Ratios([Year])
 
-
+```
+</code>
+</pre>
 
 
 
