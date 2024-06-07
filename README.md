@@ -1,4 +1,4 @@
-# Major Haemorrhage Protocol
+# Blood Transfusion in Major Haemorrhage
 
 Major haemorrhage is defined as blood loss requiring ≥4 units of Red Blood Cells (RBC) in the past hour, or blood loss with an anticipated need for ≥4 units RBC in the next hour. During treatment of major haemorrhage, 3 main blood components need to be administered: RBC, Fresh Frozen Plasma (FFP) and Platelets. The majority of evidence from clinical literature indicates that transfusion of these 3 blood components, specifically in a 1:1:1 ratio, maximizes survival outcomes for patients. Hospitals will generally institute their own major haemorrhage protocols to ensure the appropriate blood components are administered such that this ideal ratio is met.
 
