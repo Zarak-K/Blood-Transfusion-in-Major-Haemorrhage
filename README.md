@@ -4,12 +4,16 @@ Major haemorrhage is defined as blood loss requiring ≥4 units of Red Blood Cel
 
 Data has been collected for major haemorrhage cases from 2017 - present. This data includes Date, Age, Gender, Reason for protocol activation, Time of activation, 30 Day survival as well as the number of units of each blood component that were ordered, transfused and wasted. The objectives of this project were to:
 
-- Assess whether transfusion ratios have improved since 2017
-- Assess whether any changes in transfusion ratios can be correlated with changes in survival rate
 - Provide a means of easily monitoring the ratios going forward
 - Provide a means of monitoring blood component wastage
+- Assess whether transfusion ratios have improved since 2017
+- Assess whether any changes in transfusion ratios can be correlated with changes in survival rate
+- Assess any changes in blood component wastage from 2017
 
-Data for the individual cases were entered into an excel spreadsheet and transfusion ratios for each case were calculated. Average ratios and 30 day survival rates for each year were then calculated along with total units ordered, transfused, wasted and the percentage waste for each year. This information was then moved to a database (template shown in Images - Database Template.png) and displayed on a dashboard created in powerBI.
+## Objectives 1 & 2
+Data for the individual cases were entered into an excel spreadsheet and transfusion ratios for each case were calculated. Average ratios and 30 day survival rates for each year were then calculated along with total units ordered, transfused, wasted and the percentage waste for each year. This information was then moved to a database using the following template and displayed on a dashboard created in powerBI.
+
+![MTP Overview](Images/Database%20Template.png)
 
 ![MTP Overview](Images/MTP%20Overview.png)
 
@@ -17,7 +21,9 @@ Individual reports for each year were also created, with an example shown below.
 
 ![MTP Overview](Images/MTP%202022%20Report.png)
 
-## Objective 1
+Identifying the specific data of interest, implementing a systematic way of recording this data and providing a way of visualizing and interpreting this data will ensure any metrics of interest can be tracked going forward.
+
+## Objective 3
 Looking at the overview dashboard, the transfusion ratios appear to be closer to the ideal ratio, with a significant improvement from 2019 onwards. This was to be expected following an update to the transfusion protocol in 2019 which had the specific aim of improving the ratio. Average percentage disparities were calculated for each year an used to provide a quantitative assessment of the improvement.
 
 | Year     | Ratio Disparity (%)   | 30 Day Survival Rate (%)  |
