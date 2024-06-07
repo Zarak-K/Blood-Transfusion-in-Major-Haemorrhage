@@ -54,6 +54,7 @@ plt.ylabel('Residuals')
 
 ![MTP Overview](Images/Regression%20Analysis.png)
 
+The r value was calculated to be -0.703 (p value = 0.039) indicating a moderate to strong negative linear correlation between ratio disparity and survival rate. This relationship is statistically significant assuming an alpha value of 0.05, hence the research hypothesis can be accepted. 
 
 
 
