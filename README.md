@@ -7,7 +7,7 @@ Data has been collected for major haemorrhage cases from 2017 - present. This da
 1) Provide a means of easily monitoring the ratios going forward
 2) Provide a means of monitoring blood component wastage
 3) Assess whether transfusion ratios have improved since 2017
-4) Assess whether any changes in transfusion ratios can be correlated with changes in survival rate
+4) Assess whether any improvements in transfusion ratio can be correlated with improvements in survival rate
 5) Assess any changes in blood component wastage from 2017
 
 ## Objectives 1 & 2
@@ -86,7 +86,7 @@ The r value was calculated to be -0.703 (p value = 0.039) indicating a moderate 
 The R<sup>2</sup> value is 0.494, indicating the ratio disparity accounts for roughly 50% of the variance in survival rate. An R<sup>2</sup> value on the lower side would be expected given the abundance of other factors which impact survival, hence this linear model would not be sufficient for predicting survival rates. To provide stronger predictive power, a multifactorial model would need to be used accounting for Age, Gender, Injury severity and mechanism, time to first transfusion etc. in addition to the transfusion ratio, although this was beyond the scope of this project.
 
 ## Objective 5
-Percentage waste for each blood component are shown below.
+Percentage waste for each blood component is shown below.
 
 | Year     | RBC Waste (%)   | FFP Waste (%)  | Platelet Waste (%) |
 | ---------| ----------------| ---------------|--------------------|
@@ -98,6 +98,9 @@ Percentage waste for each blood component are shown below.
 | 2022     | 10.2            | 26.1           | 5.1                |
 | 2023     | 7.9             | 25.6           | 11.1               |
 
+Comparing waste between 2017 and 2023, there is a 0.6%, 13.8% and 10.3% reduction in waste for RBC, FFP and Platelets respectively in absolute terms, with relative reductions of 7.1%, 35.0% and 48.1% respectively. These results, along with trends seen in the Overview dashboard indicate consistent reductions in waste for FFP and Platelets, whereas RBC waste has remained roughly the same. These are promising results as RBC waste is remaining consistently low, with FFP and Platelet Waste significantly downtrending from high levels.
 
+## Conclusion
+Overall, an effective means of monitoring the key metrics of transfusion ratio, blood component wastage and survival rate has been instituted. This will enable clinicians to respond to changes in these metrics with a view to improving patient care and survival outcomes. Assessment of the available data shows improvements in transfusion ratios, correlated with improvements in survival rate. Positive trends in blood component wastage have also been observed, with significant decreases in FFP and Platelet waste, and consistently low RBC waste. 
 
 
