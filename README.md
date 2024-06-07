@@ -105,7 +105,9 @@ An effective means of monitoring the key metrics: transfusion ratio, blood compo
 
 ## References
 [1] Miller, T.E. New evidence in trauma resuscitation - is 1:1:1 the answer?. Perioper Med 2, 13 (2013). https://doi.org/10.1186/2047-0525-2-13
+
 [2] Holcomb JB, Tilley BC, Baraniuk S, et al. Transfusion of Plasma, Platelets, and Red Blood Cells in a 1:1:1 vs a 1:1:2 Ratio and Mortality in Patients With Severe Trauma: The PROPPR Randomized Clinical Trial. JAMA. 2015;313(5):471–482. doi:10.1001/jama.2015.12
+
 [3] Nascimento B, Callum J, Tien H, Rubenfeld G, Pinto R, Lin Y, Rizoli S. Effect of a fixed-ratio (1:1:1) transfusion protocol versus laboratory-results-guided transfusion in patients with severe trauma: a randomized feasibility trial. CMAJ. 2013 Sep 3;185(12):E583-9. doi: 10.1503/cmaj.121986. Epub 2013 Jul 15. PMID: 23857856; PMCID: PMC3761040.
 
 
