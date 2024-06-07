@@ -1,6 +1,6 @@
 # Blood Transfusion in Major Haemorrhage
 
-Major haemorrhage is defined as blood loss requiring ≥4 units of Red Blood Cells (RBC) in the past hour, or blood loss with an anticipated need for ≥4 units RBC in the next hour. During treatment of major haemorrhage, 3 main blood components need to be administered: RBC, Fresh Frozen Plasma (FFP) and Platelets. The majority of evidence from clinical literature indicates that transfusion of these 3 blood components, specifically in a 1:1:1 ratio, maximizes survival outcomes for patients. Hospitals will generally institute their own major haemorrhage protocols to ensure the appropriate blood components are administered such that this ideal ratio is met.
+Major haemorrhage is defined as blood loss requiring ≥4 units of Red Blood Cells (RBC) in the past hour, or blood loss with an anticipated need for ≥4 units RBC in the next hour. During treatment of major haemorrhage, 3 main blood components need to be administered: RBC, Fresh Frozen Plasma (FFP) and Platelets. The majority of evidence from clinical literature indicates that transfusion of these 3 blood components, specifically in a 1:1:1 ratio, maximizes survival outcomes for patients<sup>[1][2][3]</sup>. Hospitals will generally institute their own major haemorrhage protocols to ensure the appropriate blood components are administered such that this ideal ratio is met.
 
 Data has been collected for major haemorrhage cases from 2017 - present. This data includes Date, Age, Gender, Reason for protocol activation, Time of activation, 30 Day survival as well as the number of units of each blood component that were ordered, transfused and wasted. The objectives of this project were to:
 
@@ -102,5 +102,10 @@ Comparing waste between 2017 and 2023, there is a 0.6%, 13.8% and 10.3% reductio
 
 ## Conclusion
 An effective means of monitoring the key metrics: transfusion ratio, blood component wastage and survival rate has been instituted. This will enable clinicians to respond to changes in these metrics with a view to improving patient care and survival outcomes. Assessment of the available data shows improvements in transfusion ratio, correlated with improvements in survival rate. Positive trends in blood component wastage have also been observed, with significant decreases in FFP and Platelet waste, and consistently low RBC waste. 
+
+## References
+[1] Miller, T.E. New evidence in trauma resuscitation - is 1:1:1 the answer?. Perioper Med 2, 13 (2013). https://doi.org/10.1186/2047-0525-2-13
+[2] Holcomb JB, Tilley BC, Baraniuk S, et al. Transfusion of Plasma, Platelets, and Red Blood Cells in a 1:1:1 vs a 1:1:2 Ratio and Mortality in Patients With Severe Trauma: The PROPPR Randomized Clinical Trial. JAMA. 2015;313(5):471–482. doi:10.1001/jama.2015.12
+[3] Nascimento B, Callum J, Tien H, Rubenfeld G, Pinto R, Lin Y, Rizoli S. Effect of a fixed-ratio (1:1:1) transfusion protocol versus laboratory-results-guided transfusion in patients with severe trauma: a randomized feasibility trial. CMAJ. 2013 Sep 3;185(12):E583-9. doi: 10.1503/cmaj.121986. Epub 2013 Jul 15. PMID: 23857856; PMCID: PMC3761040.
 
 
