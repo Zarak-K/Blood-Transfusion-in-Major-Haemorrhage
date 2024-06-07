@@ -50,6 +50,11 @@ plt.axhline(0, color='black', linestyle='--', linewidth=1)
 plt.title('Ratio Disparity vs Residuals')
 plt.xlabel('Ratio Disparity (%)')
 plt.ylabel('Residuals')
+```
+
+![MTP Overview](Images/Regression%20Analysis.png)
+
+![MTP Overview](Images/Residuals.png)
 
 
 
