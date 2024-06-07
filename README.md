@@ -4,14 +4,14 @@ Major haemorrhage is defined as blood loss requiring ≥4 units of Red Blood Cel
 
 Data has been collected for major haemorrhage cases from 2017 - present. This data includes Date, Age, Gender, Reason for protocol activation, Time of activation, 30 Day survival as well as the number of units of each blood component that were ordered, transfused and wasted. The objectives of this project were to:
 
-- Provide a means of easily monitoring the ratios going forward
-- Provide a means of monitoring blood component wastage
-- Assess whether transfusion ratios have improved since 2017
-- Assess whether any changes in transfusion ratios can be correlated with changes in survival rate
-- Assess any changes in blood component wastage from 2017
+1) Provide a means of easily monitoring the ratios going forward
+2) Provide a means of monitoring blood component wastage
+3) Assess whether transfusion ratios have improved since 2017
+4) Assess whether any changes in transfusion ratios can be correlated with changes in survival rate
+5) Assess any changes in blood component wastage from 2017
 
 ## Objectives 1 & 2
-Data for the individual cases were entered into an excel spreadsheet and transfusion ratios for each case were calculated. Average ratios and 30 day survival rates for each year were then calculated along with total units ordered, transfused, wasted and the percentage waste for each year. This information was then moved to a database using the following template and displayed on a dashboard created in powerBI.
+Data for the individual cases were entered into an excel spreadsheet and transfusion ratios for each case were calculated. Average ratios and 30 day survival rates for each year were then calculated along with total units ordered, transfused, wasted and the percentage waste for each year. This information was then moved to a database with the following template and displayed on a dashboard created in powerBI.
 
 ![MTP Overview](Images/Database%20Template.png)
 
@@ -24,7 +24,7 @@ Individual reports for each year were also created, with an example shown below.
 Identifying the specific data of interest, implementing a systematic way of recording this data and providing a way of visualizing and interpreting this data will ensure any metrics of interest can be tracked going forward.
 
 ## Objective 3
-Looking at the overview dashboard, the transfusion ratios appear to be closer to the ideal ratio, with a significant improvement from 2019 onwards. This was to be expected following an update to the transfusion protocol in 2019 which had the specific aim of improving the ratio. Average percentage disparities were calculated for each year an used to provide a quantitative assessment of the improvement.
+To assess the improvement in transfusion ratios that can be seen from the Overview dashboard, the average percentage difference of transfused blood components from the optimal amount according to the 1:1:1 ratio was calculated for each year and used as a measure of disparity from the optimal ratio. These results are shown in the table below.
 
 | Year     | Ratio Disparity (%)   | 30 Day Survival Rate (%)  |
 | ---------| --------------------- | --------------------------|
@@ -36,7 +36,10 @@ Looking at the overview dashboard, the transfusion ratios appear to be closer to
 | 2022     | 8.3                   | 84.0                      |
 | 2023     | 16.7                  | 69.2                      |
 
-Given that there is substantial evidence to support the use of a 1:1:1 ratio, the research hypothesis is that increased disparity between administered and optimal ratios will be negatively correlated with 30 day survival rates. The percentage disparity from optimal ratio was calculated for each year and linear regression analysis was performed.
+From this table it can be seen that transfusion ratios improve significantly from 2019 onwards. This was to be expected following an update to the transfusion protocol in 2019 which aimed specifically to improve the ratio. Overall, the ratio disparity has decreased by 23.6% from 2017.
+
+##Objective 4
+Given that there is substantial clinical evidence to support the use of a 1:1:1 transfusion ratio, the research hypothesis is that increased disparity between administered and optimal ratios will be negatively correlated with 30 day survival rates. To assess this, linear regression analysis was performed
 
 ```python
 import pandas as pd
@@ -76,7 +79,7 @@ axs[1].set_ylabel('Residuals')
 
 ![MTP Overview](Images/Regression%20Analysis.png)
 
-The r value was calculated to be -0.703 (p value = 0.039) indicating a moderate to strong negative linear correlation between ratio disparity and survival rate. This relationship is statistically significant assuming an alpha value of 0.05, hence the research hypothesis can be accepted. The obtained result is in agreement with the clinical literature, further supporting the idea that major haemorrhage protocols should aim for a 1:1:1 ratio of RBC:FFP:Platelets.
+The r value was calculated to be -0.703 (p value = 0.039) indicating a moderate to strong negative linear correlation between ratio disparity and survival rate. This relationship is statistically significant assuming an alpha value of 0.05, providing some evidence in support of the research hypothesis. The obtained result is also in agreement with the clinical literature, further supporting the idea that major haemorrhage protocols should aim for a 1:1:1 ratio of RBC:FFP:Platelets.
 
 
 
