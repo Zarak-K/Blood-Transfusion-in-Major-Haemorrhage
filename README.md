@@ -54,7 +54,6 @@ plt.ylabel('Residuals')
 
 ![MTP Overview](Images/Regression%20Analysis.png)
 
-![MTP Overview](Images/Residuals.png)
 
 
 
